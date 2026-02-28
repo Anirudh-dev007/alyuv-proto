@@ -29,6 +29,10 @@ export default defineConfig({
   },
   root: path.resolve(import.meta.dirname, "client"),
 
+  css: {
+    postcss: path.resolve(import.meta.dirname, "postcss.config.js"),
+  },
+
   // ✅ FIXED BUILD OUTPUT
   build: {
     outDir: "dist",        // relative to root (client/dist)
